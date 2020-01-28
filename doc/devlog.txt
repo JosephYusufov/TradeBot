@@ -6,3 +6,8 @@ Created minimal design doc. Also created fetch(symbol, interval) command as per 
 of right now the fetch command pretty prints the data, but returns it in a very ugly and difficult fashion.
 Will use either OOP and toString functionality to fix this, or, more likely, create a data structure that is
 passed around (dictionary by timestamp of tuples. Each tuple has two values: high, and low)
+
+joseph -> 2020-01-27 23:45
+Created the PriceData class, pretty convenient. Made appropriate changes to the design doc.
+Now, price data is retrieved as part of this object, and this data is recieved immediately
+upon instantiation.

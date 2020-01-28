@@ -1,4 +1,4 @@
-Tree:
+Files:
     alpaca.py
         - buy(symbol, qty)
         - sell(symbol, qty)
@@ -6,7 +6,16 @@ Tree:
         - buying_power()
         
     alphavantage.py
-        - fetch(symbol, interval)
+        - fetch(symbol, interval) -- similar to PriceData.get_data(), prints the data. Does not return formatted data. Not preferred.
+        - PriceData -- A class that retrieves and formats data from the AlphaVantage API into a format that is conveniently usable.
+            Attributes:
+            - symbol -- valid NYSE symbol
+            - interval -- valid AlphaVantage interval ("1min", "5min", "15min", "30min", "60min")
+            Functions:
+            - __init__(self, symbol, interval, data) -- Instantiate given already formatted data
+            - __init__(self, symbol, interval) -- Instantiate without given data, and get that data using get_data().
+            - __str__(self) -- pretty prints object
+            - query_API() -- uses self.symbol and self.interval to retrieve data from the AlphaVantage API.
         
     strategies.py
         - momentum()
