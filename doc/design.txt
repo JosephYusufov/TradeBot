@@ -1,0 +1,20 @@
+Tree:
+    alpaca.py
+        - buy(symbol, qty)
+        - sell(symbol, qty)
+        - positions()
+        - buying_power()
+        
+    alphavantage.py
+        - fetch(symbol, interval)
+        
+    strategies.py
+        - momentum()
+        ### TO BE POPULATED ONCE I LEARN WHAT THE STRATS ARE ###
+        
+    credentials/
+        - alpaca_KEY.txt
+                - Alpaca API key and secret key
+        - alphavantage_KEY.txt
+                - Alpha Vantage API key
+        

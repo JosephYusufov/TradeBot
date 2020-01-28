@@ -1,2 +1,8 @@
 joseph -> 2020-01-27 00:40
 Documented APIs in README.md, created devlog.
+
+joseph -> 2020-01-27 20:00
+Created minimal design doc. Also created fetch(symbol, interval) command as per measley design doc, but as
+of right now the fetch command pretty prints the data, but returns it in a very ugly and difficult fashion.
+Will use either OOP and toString functionality to fix this, or, more likely, create a data structure that is
+passed around (dictionary by timestamp of tuples. Each tuple has two values: high, and low)
