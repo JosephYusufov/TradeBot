@@ -1,9 +1,9 @@
 Files:
     alpaca.py
-        - buy(symbol, qty)
-        - sell(symbol, qty)
-        - positions()
-        - buying_power()
+        - buy(symbol, qty) -- buys a quantity of shares of a stock
+        - sell(symbol, qty) -- sells a quantity of shares of a stock
+        - positions() -- returns a dictionary of current positions
+        - buying_power() -- returns current buying power in USD.
         
     alphavantage.py
         - fetch(symbol, interval) -- similar to PriceData.get_data(), prints the data. Does not return formatted data. Not preferred.
