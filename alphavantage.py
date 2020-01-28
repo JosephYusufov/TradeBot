@@ -86,7 +86,8 @@ def fetch(symbol, interval):
     print("TIME                   LOW           HIGH")
     print("-----------------------------------------")
     for member in data[ "Time Series ({})".format(interval) ]:
-        print("{}    {}    {}".format(member, data["Time Series ({})".format(interval)][member]["2. high"], data["Time Series ({})".format(interval)][member]["3. low"]))
+        print("{}    {}    {}".format(member, data["Time Series ({})".format(interval)][member]["2. high"],
+                                              data["Time Series ({})".format(interval)][member]["3. low"]))
 
     return data
 
@@ -98,4 +99,5 @@ AMD_5min = PriceData("AMD", "5min")
 print(AMD_5min)
 
 NVDA_1min = PriceData("NVDA", "1min")
-print(NVDA_1min.data["2020-01-27 15:59:00"])
+print(NVDA_1min)
+# print(NVDA_1min.data["2020-01-27 15:59:00"])
