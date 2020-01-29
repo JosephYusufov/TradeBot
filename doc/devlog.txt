@@ -8,6 +8,7 @@ Will use either OOP and toString functionality to fix this, or, more likely, cre
 passed around (dictionary by timestamp of tuples. Each tuple has two values: high, and low)
 
 joseph -> 2020-01-27 23:45
-Created the PriceData class, pretty convenient. Made appropriate changes to the design doc.
-Now, price data is retrieved as part of this object, and this data is recieved immediately
-upon instantiation.
+Created the PriceData class, pretty convenient. Made appropriate changes to the design doc. Now, price data is retrieved as part of this object, and this data is recieved immediately upon instantiation.
+
+joseph -> 2020-01-28 22:45
+Restructured the proj a bit. Turns out there already exists an officially supported alpaca python SDK, so Im gonna use that. alpaca.py is in the deprec/ (deprecated) directory now. new file:requirements.txt in doc/, since the SDK, and its depencancies, need to be installed. All changes reflected in the design doc.

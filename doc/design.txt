@@ -1,10 +1,7 @@
+SDKs:
+    Alpaca SDK -- Documentation available on github README of the alpaca python SDK
+
 Files:
-    alpaca.py
-        - buy(symbol, qty) -- buys a quantity of shares of a stock
-        - sell(symbol, qty) -- sells a quantity of shares of a stock
-        - positions() -- returns a dictionary of current positions
-        - buying_power() -- returns current buying power in USD.
-        
     alphavantage.py
         - fetch(symbol, interval) -- similar to PriceData.get_data(), prints the data. Does not return formatted data. Not preferred.
         - PriceData -- A class that retrieves and formats data from the AlphaVantage API into a format that is conveniently usable.
@@ -22,8 +19,11 @@ Files:
         ### TO BE POPULATED ONCE I LEARN WHAT THE STRATS ARE ###
         
     credentials/
-        - alpaca_KEY.txt
-                - Alpaca API key and secret key
+        - alpaca_CREDS.txt -- 3 fields separated with newlines:
+                - Alpaca API key
+                - Alpaca API secret key
+                - Alpaca API base URL
         - alphavantage_KEY.txt
                 - Alpha Vantage API key
-        
+    doc/requirements.txt
+        - File with all of the project's dependancies. All dependancies can be installed to a venv (when the venv is activated) with $ pip3 install -r doc/requirements.txt.
