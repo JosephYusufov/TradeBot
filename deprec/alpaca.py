@@ -18,9 +18,12 @@ def buy(symbol, qty):
     qty -- number of shares to buy
     """
     http = urllib3.PoolManager()
-    querystring = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={}&interval={}&apikey={}".format(
+    querystring = "https://paper-api.alpaca.markets/v2/orders".format(
         symbol, interval, ALPHAVANTAGE_KEY)
-    
+
+    fields = {
+        
+    }
     # print(querystring)
-    r = http.request('POST', querystring, fields = {}) 
+    r = http.request('POST', querystring, fields = fields) 
     data = json.loads(r.data.decode('utf-8'))
