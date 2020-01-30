@@ -12,3 +12,7 @@ Created the PriceData class, pretty convenient. Made appropriate changes to the 
 
 joseph -> 2020-01-28 22:45
 Restructured the proj a bit. Turns out there already exists an officially supported alpaca python SDK, so Im gonna use that. alpaca.py is in the deprec/ (deprecated) directory now. new file:requirements.txt in doc/, since the SDK, and its depencancies, need to be installed. All changes reflected in the design doc.
+
+joseph -> 2020-01-29 19:30
+Started writing code using the Alpaca SDK.
+
